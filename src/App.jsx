@@ -1,6 +1,9 @@
 import Header from "./components/header/Header";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter,Router,Route,Routes } from "react-router-dom";
 import Home from "./components/main/Home"
+import About from "./components/main/About";
+import Footer from "./components/footer/Footer";
 
 
 const App=()=>{
@@ -11,9 +14,11 @@ const App=()=>{
 
     <Routes>
     <Route path="/" element={<Home/>}/>
+    <Route path="/about" element={<About/>}/>
 
 
     </Routes>
+    <Footer/>
     </BrowserRouter>
  
     </>

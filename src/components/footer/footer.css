@@ -1,0 +1,54 @@
+.footer{
+    padding: 20px 0;
+}
+.footer h5{
+    font-size: 38px;
+    font-weight: bold;
+}
+.footer p{
+    font-size: 0.9 rem;
+}
+.social-icons .btn{
+    margin-top: 10px;
+    border-radius: 50px;
+    background-color: #18d26e;
+    color: black;
+    border: none;
+    
+}
+.social-icons .btn:hover{
+    opacity: 0.7;
+    background-color: #18d26e;
+    color: black; 
+}
+.fa-facebook-f,
+.fa-instagram,.fa-linkedin{
+    font-size: 16px;
+    
+}
+.back-to-top{
+    position: fixed;
+    margin-top: 20px;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    border: none;
+    padding:10px 15px 10px 15px;
+    /* font-size:20px; */
+    background-color:#18d26e;
+    color: black;
+}
+.bootstrap-color{
+    color: #18d26e;
+}
+.back-to-top:hover{
+    opacity: 0.7;
+    background-color: #18d26e;
+    color: black;
+}
+.fa-arrow-up{
+    font-size: 16px;
+}
+.size{
+    margin:2rem 8rem 0.5rem;
+}

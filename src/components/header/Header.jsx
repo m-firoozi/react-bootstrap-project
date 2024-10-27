@@ -5,15 +5,33 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import {Link } from 'react-router-dom';
 import "./headerstyle.css";
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 
 function Header() {
+
+  const [navbarBg, setNavbarBg]=useState(false);
+
+  const handleScroll=()=> {
+    if (window.scrollY > 50){
+      setNavbarBg(true);
+    }else {
+      setNavbarBg(false)
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll",handleScroll);
+    return ()=>{
+      window.removeEventListener("scroll",handleScroll);
+    }
+  },[]);
+
     const [activeLink,setActiveLink]=useState("/")
     const handleSetActive=(path)=>{
         setActiveLink(path);
     }
   return (
-    <Navbar expand="lg" className="bg-black navbar-dark navbar">
+    <Navbar expand="lg" fixed='top' className={navbarBg ? "navbar-scroll" : "navbar-transparent"} variant='dark'>
       <Container>
         <Navbar.Brand href="#home" className='personal-size'>Personal</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -25,7 +25,7 @@ const Footer=()=>{
                         Designed by <span className="bootstrap-color">BootstrapMade</span></p>
                     </Col>
                 </Row>
-                <Button className="back-to-top" onClick={()=>window.scrollTo({ top:0 ,behavior:"smooth"})} ><i className="fas fa-arrow-up"></i></Button>
+                {/* <Button className="back-to-top" onClick={()=>window.scrollTo({ top:0 ,behavior:"smooth"})} ><i className="fas fa-arrow-up"></i></Button> */}
             </Container>
         </footer>
     )

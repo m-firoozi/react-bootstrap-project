@@ -4,6 +4,7 @@ import { BrowserRouter,Router,Route,Routes } from "react-router-dom";
 import Home from "./components/main/Home"
 import About from "./components/main/About";
 import Footer from "./components/footer/Footer";
+import ScrollToTop from "./components/scrollTop/scrollToTop";
 
 
 const App=()=>{
@@ -19,6 +20,7 @@ const App=()=>{
 
     </Routes>
     <Footer/>
+    <ScrollToTop/>
     </BrowserRouter>
  
     </>

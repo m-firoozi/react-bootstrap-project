@@ -1,0 +1,41 @@
+.bg-dark{
+    background-color: #333!important;
+}
+.progress-bar{
+    background-color: #18d26e!important;
+}
+.progress-bar-rectangular{
+    border-radius: 0!important;
+    height:10px;
+}
+.skills-header{
+    display: flex;
+    align-items: center;
+}
+.skills-title{
+    font-size: 14px;
+    color: #888;
+    text-transform: uppercase;
+    margin-right: 10px;
+    position: relative;
+}
+.skills-title::after{
+    content:" ";
+    display: inline-block;
+    width:90px;
+    height: 2px;
+    background-color: #18d26e;
+    position: absolute;
+    top:50%;
+    left:100%;
+    margin-left: 10px;
+    transform: translateY(-50%);
+}
+
+.skills-main-title{
+    font-size: 24px;
+    font-weight: bold;
+   margin: 0;
+    color: #fff;
+}
+

@@ -1,0 +1,31 @@
+.my-5{
+    margin:3rem 0;
+}
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+ul.list-unstyled{
+    padding-left: 0;
+    list-style: none;
+    color: #fff;
+}
+ul.list-unstyled li{
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+.text-success{
+    color:#fff!important;
+    font-weight: bold;
+}
+.info-item::before{
+    content:">";
+    font-size: 23px!important;
+    color: #18d26e;
+    margin-right: 0.5rem;
+    /* font-weight: bold; */
+}
+.text-position{
+    margin-left: 10rem;
+}

@@ -8,10 +8,10 @@ const Home=()=>{
        <Container fluid className="home-container d-flex align-items-center">
         <Row className="justify-content-start w-100"> 
             <Col md={6} className="text-section">
-            <h1>Mehrnoosh Firoozi</h1>
+            <h1>Faeze Firoozi</h1>
             <h2>
                 <span className="typewriter-text">I'm{" "}<span className="highlight-text">
-            <Typewriter words={["a freelancer", "a developer" , "a web designer"]} loop={0} cursor cursorStyle="|" typeSpeed={70} deleteSpeed={50} delaySpeed={1000}/>
+            <Typewriter words={["a web designer" , "a freelancer", "a developer"]} loop={0} cursor cursorStyle="|" typeSpeed={70} deleteSpeed={50} delaySpeed={1000}/>
             </span>
             </span>
             </h2>

@@ -17,11 +17,11 @@ const PersonalInfo=() =>{
 
                 </ul>
                 </Col>
-                <Col md={5}>
+                <Col md={5} className="mt-1">
                 <ul className="list-unstyled">
                     <li className="info-item"><span className="text-success">Age:</span> 28</li>
                     <li className="info-item"><span className="text-success">Degree:</span> BA</li>
-                    <li className="info-item"><span className="text-success">Email:</span> mehrnooshfiroozi@yahoo.com</li>
+                    <li className="info-item"><span className="text-success">Email:</span> faeze.firouzi@yahoo.com</li>
                     <li className="info-item"><span className="text-success">Freelance:</span> Available</li>
 
 

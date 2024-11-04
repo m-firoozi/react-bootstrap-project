@@ -1,0 +1,68 @@
+.interest-card{
+    /* padding: 10px; */
+    border: 1px solid #252424;
+    transition: border-color 0.3s ease,color 0.3s ease;
+    background-color: #191919;
+    border-radius: 0;
+    
+}
+.interest-card:hover{
+    border-color: #18d26e;
+    color: #18d26e;
+}
+
+.features-style{
+    font-size: 16px;
+    color: #888!important;
+    text-transform: uppercase;
+    margin-right: 10px;
+    position: relative;
+}
+.features-style::after{
+    content:" ";
+    display: inline-block;
+    width:90px;
+    height: 2px;
+    background-color: #18d26e;
+    position: absolute;
+    top:50%;
+    /* left:100%; */
+    margin-left: 10px;
+    transform: translateY(-50%);
+}
+.text-position{
+   display: flex;
+   align-items:center;
+   justify-content:center;
+  padding: 10px 30px;
+
+}
+.interest-icon{
+    font-size:28px;
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+.interest-title{
+    font-weight: bold;
+    font-size: 16px;
+    color:#fff;
+    transition: color 0.3s ease;
+}
+.interest-card .card.body{
+    padding:10px;
+}
+.interest-card:hover .interest-title{
+    color:#18d26e;
+}
+.position{
+    margin-left:6rem;
+    margin-top: 8rem!important;
+}
+@media(max-width:576px){
+    .interest-icon{
+        font-size: 20px;
+    }
+    .interest-title{
+        font-size: 14px;
+    }
+}

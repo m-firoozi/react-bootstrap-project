@@ -5,6 +5,7 @@ import Home from "./components/main/home/Home"
 import About from "./components/main/about/About";
 import Footer from "./components/footer/Footer";
 import ScrollToTop from "./components/scrollTop/scrollToTop";
+import Resume from "./components/main/resume/Resume";
 
 
 const App=()=>{
@@ -16,6 +17,7 @@ const App=()=>{
     <Routes>
     <Route path="/" element={<Home/>}/>
     <Route path="/about" element={<About/>}/>
+    <Route path="/resume" element={<Resume/>}/>
 
 
     </Routes>

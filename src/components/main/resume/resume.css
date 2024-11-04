@@ -1,0 +1,32 @@
+
+.position{
+    margin-left: 7rem;
+}
+.resume-section{
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 2rem;
+    border-left: 2px solid #18d26e;
+}
+.resume-section h5{
+    font-weight: bold;
+    color: #cbcbcb!important;
+}
+h3{
+    color: #ffffff;
+}
+.resume-section p,
+.resume-section ul li{
+    color: #d4d4d4;
+}
+.resume-section::before{
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width:15px;
+    height: 15px;
+    background-color: #18d26e;
+    /* border: 2px solid #18d26e; */
+    border-radius: 50%;
+}

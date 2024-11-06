@@ -1,0 +1,87 @@
+.contact-section h5{
+    font-weight: bold;
+    color: #ffffff;
+}
+.contact-section{
+   margin-left: 6.5rem;
+}
+.contact-info{
+    color: rgba(255,255,255,0.8);
+    gap: 1rem;
+}
+/***************************************/
+.icon-circle{
+    background-color: #18d26e;
+    color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.p-color{
+    color: #ffffff!important;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.info-position{
+    margin-left: 0.5rem;
+}
+.icon{
+    font-size:2rem;
+    color: black;
+    border-radius: 100%;
+    margin-right: 10px;
+    background-color: #18d26e;
+}
+.social-icons{
+    display: flex;
+    gap:10px;
+    font-size: 24px;
+}
+.social-icon{
+    color: gray;
+}
+.social-icon:hover{
+    color: #18d26e;
+}
+form .form-control{
+    background-color:transparent;
+    border-color: rgba(255,255,255,0.3);
+    border-radius: 0;
+    color: rgba(255,255,255,0.9)!important;
+    outline: none;
+}
+form .form-control::placeholder{
+    color: rgba(255,255,255,0.6);
+}
+form .form-control:focus{
+    background-color: transparent;
+    box-shadow:0 0 0 1px rgba(14, 223, 25, 0.7);
+    border-color: #18d26e;
+}
+.send-btn{
+    display: flex;
+    justify-content: center;
+ 
+}
+.send-btn button {
+    background-color: #18d26e;
+    color: black;
+    margin-top: 1rem;
+    border: none;
+    /* width: 164.89px;
+    height: 44px; */
+    padding: 10px 35px;
+    border-radius: 30px;
+   
+}
+.send-btn button:hover{
+    opacity: 0.7;
+    background-color: #18d26e;
+    color: black;
+}

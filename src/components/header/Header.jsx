@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import {Link } from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import "./headerstyle.css";
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -26,10 +26,10 @@ function Header() {
     }
   },[]);
 
-    const [activeLink,setActiveLink]=useState("/")
-    const handleSetActive=(path)=>{
-        setActiveLink(path);
-    }
+    // const [activeLink,setActiveLink]=useState("/")
+    // const handleSetActive=(path)=>{
+    //     setActiveLink(path);
+    // }
   return (
     <Navbar expand="lg" fixed='top' className={navbarBg ? "navbar-scroll" : "navbar-transparent"} variant='dark'>
       <Container>
@@ -37,11 +37,11 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto px-4">
-            <Link to="/" className={activeLink === "/" ? "active nav-link" : "nav-link"} onClick={()=>handleSetActive("/")}>Home</Link>
-            <Link to="/about" className={activeLink === "/about" ? "active nav-link" : " nav-link"} onClick={()=>handleSetActive("/about")}>About</Link>
-            <Link to="/resume" className={activeLink === "/resume" ? "active nav-link" : "nav-link "} onClick={()=>handleSetActive("/resume")}>Resume</Link>
-            <Link to="/services" className={activeLink === "/services" ? "active nav-link" : "nav-link"} onClick={()=>handleSetActive("/services")}>Services</Link>
-            <Link to="/portfolio" className={activeLink === "/portfolio" ? "active nav-link" : "nav-link"} onClick={()=>handleSetActive("/portfolio")}>Portfolio</Link>
+            <NavLink to="/" end className="nav-link">Home</NavLink>
+            <NavLink to="/about"  className="nav-link">About</NavLink>
+            <NavLink to="/resume"  className="nav-link">Resume</NavLink>
+            <NavLink to="/services" className="nav-link">Services</NavLink>
+            <NavLink to="/portfolio" className="nav-link">Portfolio</NavLink>
             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -53,7 +53,7 @@ function Header() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown> */}
-           <Link to="/contact" className={activeLink === "/contact" ? "active nav-link" : "nav-link"} onClick={()=>handleSetActive("/contact")}>Contact</Link>
+           <NavLink to="/contact" className="nav-link">Contact</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -8,6 +8,11 @@
 .footer p{
     font-size: 0.9 rem;
 }
+.social-icons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 .social-icons .btn{
     margin-top: 10px;
     border-radius: 50px;

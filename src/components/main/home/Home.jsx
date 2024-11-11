@@ -16,7 +16,7 @@ const Home=()=>{
             </span>
             </h2>
             <div className="social-links mt-4">
-                <Button variant="outline-light" href="https://www.facebook.com" target="_blank" className="ms-2 social-btn"><i className="fab fa-facebook-f"></i></Button>
+                <Button variant="outline-light" href="https://github.com/m-firoozi/" target="_blank" className="ms-2 social-btn"><i className="fab fa-github"></i></Button>
                 <Button variant="outline-light" href="https://www.instagram.com" target="_blank" className="ms-2 social-btn"><i className="fab fa-instagram"></i></Button>
                 <Button variant="outline-light" href="https://www.linkedin.com" target="_blank" className="ms-2 social-btn"><i className="fab fa-linkedin"></i></Button>
 

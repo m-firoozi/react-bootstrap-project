@@ -8,6 +8,7 @@ const PersonalInfo=() =>{
             <Row className="my-5">
                 
                 <h2 className="text-success text-center mb-5">Web Designer & Web Developer</h2>
+                
                 <Col md={5} className="text-position">
                 <ul className="list-unstyled">
                     <li className="info-item"><span className="text-success">Birthday:</span> 20 February 1996</li>
@@ -17,7 +18,7 @@ const PersonalInfo=() =>{
 
                 </ul>
                 </Col>
-                <Col md={5} className="mt-1">
+                <Col md={5} className="mt-1 tablet-size">
                 <ul className="list-unstyled">
                     <li className="info-item"><span className="text-success">Age:</span> 28</li>
                     <li className="info-item"><span className="text-success">Degree:</span> BA</li>
@@ -27,6 +28,7 @@ const PersonalInfo=() =>{
 
                 </ul>
                 </Col>
+                
             </Row>
         </Container>
     )

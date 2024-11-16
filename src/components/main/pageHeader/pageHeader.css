@@ -32,3 +32,9 @@
 + .breadcrumb-item::before{
     color: gray;
 }
+@media(max-width:768px){
+    .page-title{
+        font-size:38px;
+    }
+    
+}

@@ -1,21 +1,4 @@
-:root {
-    --default-font: Roboto, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    --heading-font: Raleway;
-    --nav-font: Poppins;
-    --background-color: #000000;
-    --default-color: #fafafa;
-    --heading-color: #ffffff;
-    --accent-color: #18d26e;
-    --surface-color: #1a1a1a;
-    --contrast-color: #000000;
-    --nav-color: #fafafa;
-    --nav-hover-color: #18d26e;
-    --nav-mobile-background-color: #1a1a1a;
-    --nav-dropdown-background-color: #1a1a1a;
-    --nav-dropdown-color: #fafafa;
-    --nav-dropdown-hover-color: #18d26e;
-    scroll-behavior: smooth;
-}
+
 .navbar-transparent{
     background-color: transparent;
     transition: background-color 0.5s ease;
@@ -62,4 +45,46 @@
 }
 .nav-link.active::after{
     width: 60%;
+}
+.offcanvas-position{
+   transform: translate(-50%,-50%);
+   top:50%;
+   left:50%; 
+   width: 95% !important;
+}
+.menu-toggle{
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer!important;
+    display:none;
+}
+
+/************************************responsive****************************/
+@media(max-width:768px){
+    .nav-link::after{
+        content: none!important;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    .offcanvas-position{
+        transform: translate(-50%,-50%);
+       top:50%;
+       left:50%; 
+       width: 95% !important;
+       margin: 4rem 1rem;
+    }
+    .personal-size{
+        font-size: 22px;
+        margin-left: 0;
+    }
+   
+}
+/***********************************/
+@media(max-width:480px){
+    .offcanvas-position{
+       margin: 4rem 0.5rem;
+    }
 }

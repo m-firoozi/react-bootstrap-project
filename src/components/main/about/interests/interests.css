@@ -15,7 +15,6 @@
     font-size: 16px;
     color: #888!important;
     text-transform: uppercase;
-    margin-right: 10px;
     position: relative;
 }
 .features-style::after{
@@ -26,16 +25,8 @@
     background-color: #18d26e;
     position: absolute;
     top:50%;
-    /* left:100%; */
     margin-left: 10px;
     transform: translateY(-50%);
-}
-.text-position{
-   display: flex;
-   align-items:center;
-   justify-content:center;
-  padding: 10px 30px;
-
 }
 .interest-icon{
     font-size:28px;
@@ -54,10 +45,15 @@
 .interest-card:hover .interest-title{
     color:#18d26e;
 }
+
 .position{
-    margin-left:6rem;
     margin-top: 8rem!important;
+    
 }
+
+
+/*********************************************responsive*****************************************/
+
 @media(max-width:576px){
     .interest-icon{
         font-size: 20px;
@@ -65,4 +61,22 @@
     .interest-title{
         font-size: 14px;
     }
+}
+
+/****************************************************/
+@media(max-width:768px){
+   
+    .interest-icon{
+        font-size: 20px;
+    }
+    .interest-title{
+        font-size: 14px;
+    }
+  .resize{
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+   
 }

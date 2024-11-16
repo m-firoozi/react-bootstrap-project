@@ -23,7 +23,7 @@ const Skills=()=>{
        
         <h2 className="skills-main-title mb-5">MY SKILLS</h2>
         <Row ref={ref}>{skills.map((skill,index) =>(
-            <Col key={index} md={6} className="mb-4">
+            <Col key={index} md={6} lg={6}className="mb-4">
                 <div className="text-white d-flex justify-content-between mb-1"><span>{skill.name}</span><span>{skill.level}%</span></div>
                 <ProgressBar now={inView ? skill.level : 0}  className="bg-dark progress-bar-rectangular" animated/>
             </Col>

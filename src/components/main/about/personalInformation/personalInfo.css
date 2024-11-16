@@ -27,5 +27,24 @@ ul.list-unstyled li{
     /* font-weight: bold; */
 }
 .text-position{
-    margin-left: 10rem;
+    margin-left: 11rem;
+}
+
+/*****************************responsive******************************/
+@media(max-width:768px){
+    h2{
+        font-size: 24px;
+    }
+     .text-position{
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .tablet-size{
+        display: flex!important;
+        justify-content:center;
+        align-items: center;
+        margin-left: 0.8rem;
+     }
 }

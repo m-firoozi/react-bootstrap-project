@@ -30,3 +30,14 @@ h3{
     /* border: 2px solid #18d26e; */
     border-radius: 50%;
 }
+@media(max-width:768px){
+    .position{
+        margin-left: 0!important;
+    }
+    .resume-section h5{
+        font-size: 20px!important;
+    }
+    h3{
+        font-size: 22px!important;
+    }
+}

@@ -27,7 +27,7 @@ const Interests=()=>{
             <Row>
                 {interests.map((interest,index)=>(
                      
-                    <Col key={index} md={3} sm={6} xs={12} className="mb-4">
+                    <Col key={index} xs={12} sm={6} md={3} className="mb-4">
                         <Card className="interest-card text-center mt-4">
                         <Card.Body className="d-flex justify-content-center align-items-center">
                                 <div className="interest-icon me-2">{interest.icon}</div>

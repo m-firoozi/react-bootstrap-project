@@ -11,7 +11,7 @@ const Home=()=>{
             <h1>Faeze Firoozi</h1>
             <h2>
                 <span className="typewriter-text">I'm{" "}<span className="highlight-text">
-            <Typewriter words={["a web designer" , "a freelancer", "a developer"]} loop={0} cursor cursorStyle="|" typeSpeed={70} deleteSpeed={50} delaySpeed={1000}/>
+            <Typewriter words={["a web designer" , "a freelancer", "a developer"]} loop={0}  cursorStyle="|" typeSpeed={70} deleteSpeed={50} delaySpeed={1000}/>
             </span>
             </span>
             </h2>

@@ -74,13 +74,13 @@ const Contact=()=>{
                 <Col>
                     <Form className="contact-form">
                         <Row>
-                            <Col md={6} sm={12}>
+                            <Col  sm={12} md={6}>
                                 <Form.Group controlId="name" className="mb-3">
                                     <Form.Control type="text" placeholder="Your Name"/>
                                 </Form.Group>
                             </Col>
 
-                            <Col md={6} sm={12}>
+                            <Col sm={12} md={6}>
                                 <Form.Group controlId="email" className="mb-3">
                                     <Form.Control type="email" placeholder="Your Email"/>
                                 </Form.Group>

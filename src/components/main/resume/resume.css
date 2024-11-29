@@ -30,6 +30,9 @@ h3{
     /* border: 2px solid #18d26e; */
     border-radius: 50%;
 }
+
+/*****************responsive*******************/
+
 @media(max-width:768px){
     .position{
         margin-left: 0!important;

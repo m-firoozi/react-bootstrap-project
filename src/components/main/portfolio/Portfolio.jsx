@@ -5,7 +5,7 @@ import { Container,Row,Col,Card,Modal } from "react-bootstrap";
 import { FaSearch, FaSearchPlus } from "react-icons/fa";
 import "./portfolio.css";
 import { BiLink } from "react-icons/bi";
-
+import {motion} from "framer-motion";
 
 const Portfolio=()=>{
 
@@ -92,8 +92,16 @@ const Portfolio=()=>{
     }
 
     return(
-        <>
+        <motion.div  initial={{opacity:0, y:70}}
+        animate={{opacity:1 ,y:0}}
+        exit={{opacity:0,y:70}}
+        transition={{duration:0.8}}>
         <PageHeader title="Portfolio"/>
+
+        <motion.div  initial={{opacity:0, y:70}}
+        animate={{opacity:1 ,y:0}}
+        exit={{opacity:0,y:70}}
+        transition={{duration:0.9}}>
         <Container >
             <h2 className="mb-4 text-center">My Websites</h2>
             <Row>
@@ -132,7 +140,8 @@ const Portfolio=()=>{
                 )}
             </Modal>
         </Container>
-        </>       
+        </motion.div> 
+        </motion.div>    
     )
 }
 export default Portfolio;

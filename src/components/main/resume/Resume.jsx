@@ -13,6 +13,12 @@ const Resume=()=>{
         exit={{opacity:0,y:70}}
         transition={{duration:0.8}}>
         <PageHeader title="Resume"/>
+        
+        <motion.div initial={{opacity:0, y:70}}
+        animate={{opacity:1 ,y:0}}
+        exit={{opacity:0,y:70}}
+        transition={{duration:0.8}}>
+        
         <Container className="my-5 position">
             <Row>
                 <Col md={6}>
@@ -41,7 +47,7 @@ const Resume=()=>{
                     <p>Completed in [November 2024]</p>
                 </div>
                 </Col>
-
+                
                 <Col md={6}>
                 <h3 className="text-uppercase fw-bold">Professional Experience</h3>
                 <div className="resume-section">
@@ -55,10 +61,11 @@ const Resume=()=>{
                     </ul>
                 </div>
                 </Col>
+                
             </Row>
         </Container>
-
         </motion.div>
+       </motion.div>
     )
 }
 export default Resume;

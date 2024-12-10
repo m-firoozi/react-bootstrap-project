@@ -5,12 +5,23 @@ import { LuMapPin,LuMail,LuPhone,LuShare2 } from "react-icons/lu";
 import "./contact.css";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaFacebook, FaXTwitter } from "react-icons/fa6";
+import {motion} from "framer-motion";
 
 
 const Contact=()=>{
     return(
-        <>
+        <motion.div  initial={{opacity:0, y:70}}
+        animate={{opacity:1 ,y:0}}
+        exit={{opacity:0,y:70}}
+        transition={{duration:0.8}}>
         <PageHeader title="Contact"/>
+
+        <motion.div initial="hidden"
+                        variants={{hidden:{opacity:0,y:50},
+                    visible:{opacity:1,y:0}}}
+                        transition={{duration:0.5,delay:0.3}}
+                        whileInView="visible"
+                        >
         <Container className="contact-section my-5">
             <Row className="mb-4 info-position">
                 <Col xs={12}  md={6} className="resize">
@@ -24,7 +35,7 @@ const Contact=()=>{
                  </div>  
                 </div>
                 </Col>
-              
+                
                 <Col xs={12} md={6} >
                     <div className="contact-info d-flex align-items-center mb-4">
                         <div className="icon-circle">
@@ -101,7 +112,8 @@ const Contact=()=>{
                 </Col>
             </Row>
         </Container>
-        </>       
+        </motion.div>
+             </motion.div>
     )
 }
 export default Contact;

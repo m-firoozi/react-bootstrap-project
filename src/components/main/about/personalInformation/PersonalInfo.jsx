@@ -1,9 +1,13 @@
 import React from "react";
 import { Container,Row,Col } from "react-bootstrap";
 import "./personalInfo.css";
+import {motion} from "framer-motion";
 
 const PersonalInfo=() =>{
     return(
+        <motion.div initial={{opacity:0,y:50}}
+        animate={{opacity:1,y:0}}
+        transition={{duration:0.8,delay:0.2}}>
         <Container>
             <Row className="my-5">
                 
@@ -31,6 +35,7 @@ const PersonalInfo=() =>{
                 
             </Row>
         </Container>
+        </motion.div>
     )
 }
 export default PersonalInfo;

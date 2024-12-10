@@ -2,12 +2,16 @@ import React from "react";
 import PageHeader from "../pageHeader/PageHeader";
 import { Container,Row,Col } from "react-bootstrap";
 import "./resume.css";
+import {motion} from "framer-motion";
 
 
 
 const Resume=()=>{
     return(
-        <>
+        <motion.div initial={{opacity:0, y:70}}
+        animate={{opacity:1 ,y:0}}
+        exit={{opacity:0,y:70}}
+        transition={{duration:0.8}}>
         <PageHeader title="Resume"/>
         <Container className="my-5 position">
             <Row>
@@ -54,7 +58,7 @@ const Resume=()=>{
             </Row>
         </Container>
 
-        </>
+        </motion.div>
     )
 }
 export default Resume;

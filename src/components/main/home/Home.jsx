@@ -2,9 +2,14 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { Container,Row,Col,Button } from "react-bootstrap";
 import "./home.css";
+import {motion} from "framer-motion";
 
 const Home=()=>{
     return(
+        <motion.div initial={{opacity:0,scale:0.4}}
+        animate={{opacity:1,scale:1}}
+        // exit={{opacity:0,scaleX:4}}
+        transition={{duration:2}}>
        <Container fluid className="home-container d-flex align-items-center">
         <Row className="justify-content-start w-100"> 
             <Col md={6} className="text-section">
@@ -25,6 +30,7 @@ const Home=()=>{
         </Row>
         <div className="spacer"></div>
        </Container>
+       </motion.div>
     )
 }
 export default Home;
